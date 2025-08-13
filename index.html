@@ -65,6 +65,58 @@
     .logo { position:absolute; right:32px; top:32px; height:56px; opacity:.95; }
     .impress-progressbar { position: fixed; left: 0; bottom: 0; height: 3px; background: rgba(255,255,255,0.08); width: 100%; }
     .impress-progressbar > div { height: 100%; background: var(--brand-cyan); transition: width .4s ease; }
+      @media (max-width: 768px) {
+          body {
+            overflow: auto;
+          }
+          .step {
+            position: static;
+            margin: 0 auto 32px auto;
+            width: 100vw;
+            min-width: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .card {
+            width: 95vw;
+            max-width: 420px;
+            min-width: 0;
+            height: auto;
+            min-height: 0;
+            padding: 28px 16px;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+            margin: 0 auto;
+          }
+          h1 { font-size: 2.2rem; margin-bottom: 18px; }
+          h2 { font-size: 1.3rem; margin-bottom: 14px; }
+          h3 { font-size: 1.1rem !important; margin-bottom: 10px; }
+          p, ul, li { font-size: 1.08rem; }
+          .pill, .badge, .cta { font-size: 1rem; padding: 10px 16px; border-radius: 10px; }
+          .logo { position:static; display:block; margin:0 auto 18px; height:44px; }
+          .grid { display:block; margin-bottom: 12px; }
+          .bars { gap:8px; height:70px; margin-top: 10px; }
+          .bar { width:36px; border-radius:8px 8px 4px 4px; }
+          .bar span, .bar .label { font-size: 0.8rem; }
+          #hint, #brand {
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            font-size: 0.95rem;
+            padding: 2px 0;
+            background: rgba(0,0,0,0.18);
+            border-radius: 8px;
+            max-width: 95vw;
+          }
+          #hint { flex-wrap: wrap; gap: 6px; }
+          .kpi .value { font-size: 1.3rem; }
+          .kpi { gap:6px; margin-right: 10px; margin-bottom: 8px; }
+          .hr { margin: 12px 0; }
+          ul { margin-left: 18px; }
+          .cta { display: block; width: 100%; text-align: center; margin-top: 18px; }
+        }
+      }
   </style>
 </head>
 <body>
